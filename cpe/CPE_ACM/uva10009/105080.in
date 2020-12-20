@@ -1,0 +1,37 @@
+3
+
+7 3
+AA Turin
+Turin Venice
+Turin Genoa
+AA Pisa
+Pisa Florence
+Venice Athens
+Turin Milan
+Turin Pisa
+Milan Florence
+Athens Genoa
+
+7 3
+Rome Turin
+Turin Venice
+Turin Genoa
+Rome Pisa
+Pisa Florence
+Venice ZZ
+Turin Milan
+Turin Pisa
+Milan Florence
+ZZ Genoa
+
+7 3
+Asia BB
+BB CC
+BB Genoa
+Asia Pisa
+Pisa Florence
+CC Athens
+BB Milan
+BB Pisa
+Milan Florence
+Athens Genoa

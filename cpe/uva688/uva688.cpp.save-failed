@@ -1,0 +1,80 @@
+#include <stdio.h>
+int grid[110][110]={};
+int x[110],y[110],r[110];///raw old input data
+int xValue[220], yValue[200];
+int xI[220], yI[220];
+int N;
+void show()
+{
+    for(int i=0;i<=N;i++){
+        printf("%.1f %.1f ", xValue[i*2], xValue[i*2+1]);
+    }
+    printf("\n");
+    for(int i=0;i<=N;i++){
+        printf("%d %d", xI[i*2], xI[i*2+1]);
+    }
+    printf("\n");
+}
+void mySolve()
+{
+    ///Copy
+    for(int i=0;i<N;i++){
+        xValue[i*2] = x[i]-r[i]; xValue[i*2+1] = x[i]+r[i];
+        yValue[i*2] = y[i]-r[i]; yValue[i*2+1] = y[i]+r[i];
+        xI[i*2]=i*2; xI[i*2+1]=i*2+1;
+        yI[i*2]=i*2; yI[i*2+1]=i*2+1;
+    }
+    show();
+    ///Sort
+    for(int i=0;i<N*2;i++){
+        for(int j=i+1;j<N*2;j++){
+            if(xValue[i]>xValue[j]){
+                int temp=xValue[i]; xValue[i]=xValue[j]; xValue[j]=temp;
+                temp=xI[i]; xI[i]=xI[j]; xI[j]=temp;
+            }
+        }
+    }
+    show();
+
+    ///Count Area
+}
+int main()
+{
+    int T=1;
+    while(scanf("%d", &N)==1){
+        if(N==0)break;
+        /// 100
+        /// 200.0 200.0 200.0
+        for(int ix=0;ix<110;ix++){
+            for(int iy=0;iy<110;iy++){
+                grid[ix][iy]=0;
+            }
+        }
+        for(int i=0;i<N;i++){
+            double x2,y2,r2;
+            scanf("%lf %lf %lf",&x2,&y2,&r2);
+            x[i]=x2*10; y[i]=y2*10; r[i]=r2*10;///backup with integer value
+        }
+
+mySolve();
+
+//            int x0=(x2-r2)*10, x1=(x2+r2)*10, y0=(y2-r2)*10, y1=(y2+r2)*10;
+//            if(x0<0)x0=0;
+//            if(y0<0)y0=0;
+//            //printf("%d %d %d %d\n", x0,x1,y0,y1);
+//            for(int ix=x0;ix<x1;ix++){
+//                for(int iy=y0;iy<y1;iy++){
+//                    grid[ix][iy]=1;
+//                }
+//            }
+
+        int area=0;
+        for(int ix=0;ix<4010;ix++){
+            for(int iy=0;iy<4010;iy++){
+                if(grid[ix][iy]==1)area++;
+            }
+        }
+        printf("%d %.2f\n", T, area/100.0);
+        T++;
+    }
+}
