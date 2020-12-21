@@ -1,5 +1,5 @@
-//UVA 10922, 2018/05/28 17:18
-//Author: Jeng-Sheng Yeh https://github.com/jsyeh/uva
+//UVA 10922, 2018/05/28 17:18 https://github.com/jsyeh/uva/10922
+//Author: Jeng-Sheng Yeh 葉正聖 https://github.com/jsyeh/uva
 #include <stdio.h>
 char line[2000];
 int nineStr(char * str)

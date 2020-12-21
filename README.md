@@ -22,4 +22,4 @@ int main()
 }
 ```
 
-我還在學怎麼用 Markdown 來編輯, 正在研宄這份資料 [markdown cheatsheet](https://gist.github.com/billy3321/1001749662c370887c63bb30f26c9e6e) 
+我還在學怎麼用 Markdown 來編輯, 正在研究這份資料 [markdown cheatsheet](https://gist.github.com/billy3321/1001749662c370887c63bb30f26c9e6e) 
