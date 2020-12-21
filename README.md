@@ -1,7 +1,6 @@
 # uva
 My solutions for UVa Problem Set
 
-
 小葉老師寫過的 UVa 題目
 =====================
 
@@ -13,3 +12,14 @@ My solutions for UVa Problem Set
 
 另外台灣的國立中山大學楊昌彪老師主持的 CPE (大學程式能力檢定) 會挑選一些 UVa 題庫中, 比較簡單的題目放多一些, 希望讓大學生也能有機會解題並有目標提昇程式設計能力。 我也會把歷年楊昌彪老師選的題目也嘗試都解出來, 讓大家有個解題的學習方向。
 
+我想在每個目錄裡, 都有 markdown 的解說資料, 配合 程式碼, 講解清楚。這樣同學如果看到資料, 會很容易理解。每個目錄裡, 檔案不多, 但可以完整的了解程式怎麼寫出來的。也能了解題目的意思。
+
+```C++
+#include <stdio.h>
+int main()
+{
+  printf("Hello World\n");
+}
+```
+
+我還在學怎麼用 Markdown 來編輯, 正在研宄這份資料 [markdown cheatsheet](https://gist.github.com/billy3321/1001749662c370887c63bb30f26c9e6e) 
